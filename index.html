@@ -1,74 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta  name="description" content="Felipe Bedoya's profile, coder of software development">
-    <meta  name="author" content="Felipe Bedoya">
-    <title>Felipe Bedoya | Profile</title>
-</head>
-<body>
-    <h1>Felipe Bedoya</h1>
-    <img src="img/profile-photo.png" alt="Avatar" width="100">
-    <p>Soy <strong>desarrollador de videojuegos Unity</strong> y <strong>coder</strong> de desarrollo de software en formación.</p>
-    
-    <h2>Habilidades</h2>
-    <ul>
-        <li>C#</li>
-        <li>Kotlin</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>Unity</li>
-        <li>Vuforia</li>
-        <li>Android Studio</li>
-    </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Felipe Bedoya's profile, coder of software development"
+    />
+    <meta name="author" content="Felipe Bedoya" />
+    <title>Felipe Bedoya | Portafolio</title>
+  </head>
 
-    <h2>Mi ruta de aprendizaje</h2>
-    <ol>
-        <li>HTML y CSS</li>
-        <li>JavaScript</li>
-        <li>Backend y base de datos</li>
-    </ol>
+  <body>
+    <header>
+      <a href="#hero">fbizar</a>
+      <nav>
+        <ul>
+          <li><a href="#me">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="https://fbizar.gitlab.io/" target="_blank">Juegos</a>
+      </nav>
+    </header>
 
-    <h2>Proyectos</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Tecnologías</th>
-                <th>Año</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>AR Print Design</td>
-                <td>App de RA para el área de artes gráficas del SENA - Sennova 2023.</td>
-                <td>Unity - C# - Vuforia</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Print Design Scanner</td>
-                <td>Lector de QR personalizado para impresión digital — Sennova 2023.</td>
-                <td>Android Studio - Kotlin <br> Jetpack Compose</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Nature</td>
-                <td>Navegador web ligero y personalizable para Android.</td>
-                <td>Android Studio - Java</td>
-                <td>2018</td>
-            </tr>
-        </tbody>
-    </table>
+    <main>
+      <!-- Me (main) -->
+      <section id="hero">
+        <div>
+          <img src="img/profile-photo.png" alt="Avatar" width="100" />
+          <h1>Hola, soy Felipe Bedoya</h1>
+        </div>
+        <div>
+          <!-- Floating dialog -->
+          <article>
+            <button>X</button>
+            <!-- Dialog body -->
+            <div>
+              <p>
+                Desarrollador de videojuegos Unity y coder de Riwi. <br />
+                Me apasionar buscar soluciones creativas a problemas a través de
+                buenas prácticas.
+              </p>
+              <div>
+                <a href="#projects">Mis Proyectos</a>
+                <a href="#contact">Contáctame</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <!-- Description -->
+      <section id="me">
+        <h2>Sobre mí</h2>
+        <p></p>
+      </section>
 
-    <h2>Contacto</h2>
-    <p>
-        <a href="https://github.com/fbizar" target="_blank">Github</a> ·
-        <a href="https://gitlab.com/fbizar" target="_blank">Gitlab</a> ·
-        <a href="https://fbizar.gitlab.io" target="_blank">Portfolio (Game Developer)</a>
-    </p>
+      <!-- Technologies -->
+      <section id="technologies">
+        <h2>Tecnologías</h2>
+        <ul>
+          <li>Unity</li>
+          <li>C#</li>
+          <li>Kotlin</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Tailwind</li>
+          <li>Git</li>
+          <li>Svelte</li>
+        </ul>
+      </section>
 
-</body>
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Proyectos</h2>
+        <div>
+          <!-- Card -->
+          <article>
+            <img src="" alt="Rueda libre" />
+            <!-- Card body -->
+            <div>
+              <div>
+                <span>HTML</span>
+                <span>Bootstrap</span>
+              </div>
+              <h3>Rueda Libre</h3>
+              <p>
+                Sitio web de un emprendimiento de Medellín dedicado a hacer que
+                moverse por la ciudad sea más fácil, divertido y sostenible.
+              </p>
+              <div>
+                <a href="https://github.com/fbizar/rueda-libre/tree/bootstrap" target="_blank">Ver código</a>
+                <a href="https://fbizar.github.io/rueda-libre/" target="_blank">Visitar</a>
+              </div>
+            </div>
+          </article>
+          <!-- Card -->
+          <article>
+            <img src="" alt="Algoritmia T1" />
+            <!-- Card body -->
+            <div>
+              <div>
+                <span>PSeInt</span>
+                <span>Pseudocódigo</span>
+              </div>
+              <h3>Algoritmia T1</h3>
+              <p>
+                Conjunto de algoritmos hechos en PSeInt - Riwi Trayecto 1.
+              </p>
+              <div>
+                <a href="https://github.com/fbizar/algoritmia-s1" target="_blank">Ver código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card -->
+          <article>
+            <img src="" alt="IA Generativa T1" />
+            <!-- Card body -->
+            <div>
+              <div>
+                <span>Prompt Engineering</span>
+                <span>Algoritmos</span>
+              </div>
+              <h3>IA Generativa T1</h3>
+              <p>
+                Ejercicios de IA trabajados en las sesiones de IA - Riwi Trayecto 1.
+              </p>
+              <div>
+                <a href="https://github.com/fbizar/ia-generativa-t1" target="_blank">Ver código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contacto</h2>
+        <div>
+          <p>
+            <a href="https://linkedin.com/in/felipe-bedoya-piz" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/fbizar" target="_blank">Github</a> ·
+            <a href="https://gitlab.com/fbizar" target="_blank">Gitlab</a> ·
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
