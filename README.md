@@ -43,4 +43,4 @@ Elegí Tailwind para construir mi portafolio porque me da más margen de persona
 
 
 # Autor
-Felipe Bedoya - Coder de Riwi - Github - fbizar
+Felipe Bedoya - Coder de Riwi - [Github -  fbizar](https://github.com/fbizar) 
