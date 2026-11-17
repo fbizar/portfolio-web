@@ -54,7 +54,7 @@
   }
   /* Card */
   .card {
-    @apply relative bg-surface p-6 text-lg text-text;
+    @apply relative bg-surface text-lg text-text;
   }
 
   /* Botones */
