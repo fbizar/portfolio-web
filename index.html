@@ -24,7 +24,7 @@
     <header>
       <a href="#hero">fbizar</a>
       <nav>
-        <ul>
+        <ul class="hidden md:flex">
           <li><a href="#me">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
@@ -35,9 +35,9 @@
 
     <main class="grow container mx-auto px-4 pb-8">
       <!-- Me (main) -->
-      <section id="hero" class="grid grid-cols-2 py-8">
+      <section id="hero" class="grid grid-cols-1 md:grid-cols-2 py-8">
         <div class="flex flex-col items-center gap-4">
-          <img src="img/profile-photo.jpg" class="m-auto" alt="Avatar" width="256"  />
+          <img src="img/profile-photo.jpg" class="m-auto h-60 aspect-square" alt="Avatar" />
           <h1 class="text-3xl font-bold text-primary">Hola, soy<br><span class="text-accent">Felipe Bedoya</span></h1>
         </div>
         <div class="flex justify-center py-6">
@@ -45,8 +45,8 @@
           <article class="card flex flex-col w-100">
             <button type="button" class="btn-close">X</button>
             <!-- Dialog body -->
-            <div class="flex flex-1 flex-col p-6">
-              <p>
+            <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
+              <p class="mt-auto">
                 Desarrollador de videojuegos Unity y coder de Riwi. <br />
                 Me apasionar buscar soluciones creativas a problemas a través de
                 buenas prácticas.
@@ -75,7 +75,7 @@
       <!-- Technologies -->
       <section id="technologies" class="py-3 mt-4 space-y-4">
         <h2 class="text-2xl font-bold">Tecnologías</h2>
-        <ul class="grid grid-cols-5 gap-4">
+        <ul class="grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-5 gap-4">
           <li class="tech-item" >Unity</li>
           <li class="tech-item">C#</li>
           <li class="tech-item">Kotlin</li>
@@ -94,7 +94,7 @@
       <!-- Projects -->
       <section id="projects" class="py-3 mt-4 space-y-4">
         <h2 class="text-2xl font-bold">Proyectos</h2>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- Card -->
           <article class="card flex flex-col gap-2">
             <img class="w-full h-48 object-cover" src="img/projects/rueda-libre.png" alt="Banner de Rueda libre" />
