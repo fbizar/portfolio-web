@@ -50,8 +50,14 @@
 
   /* "Juegos" (enlace externo, último hijo directo del nav) */
   header nav > a {
-    @apply bg-primary px-4 py-1.5 font-semibold text-background transition-opacity hover:text-background hover:opacity-90;
+    @apply bg-primary px-4 py-1.5 font-semibold text-background transition-opacity hover:text-background/80;
   }
+
+  /* Secciones */
+  section > h2 {
+    @apply border-b border-secondary pb-2 text-2xl font-bold;
+  }
+
   /* Card */
   .card {
     @apply relative bg-surface text-lg text-text;
@@ -68,13 +74,15 @@
     @apply absolute -top-4 -right-4 grid size-8 place-items-center bg-accent hover:bg-accent/80 text-background font-bold;
   }
 
-  .tech-item
-  {
-    @apply inline-block bg-accent text-background p-4 text-lg font-bold;
+  .tech-item {
+    @apply inline-block bg-accent text-background hover:bg-accent/80 p-4 text-lg font-bold;
   }
 
-  .contact-item
-  {
+  .contact-item {
     @apply bg-secondary hover:bg-secondary/80 font-bold py-4 px-6 flex flex-col;
+  }
+
+  .label {
+    @apply inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1;
   }
 }
