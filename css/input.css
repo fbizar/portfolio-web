@@ -72,4 +72,9 @@
   {
     @apply inline-block bg-accent text-background p-4 text-lg font-bold;
   }
+
+  .contact-item
+  {
+    @apply bg-secondary hover:bg-secondary/80 font-bold py-4 px-6 flex flex-col;
+  }
 }
