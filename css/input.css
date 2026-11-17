@@ -1,1 +1,75 @@
 @import "tailwindcss";
+
+@theme {
+  /* Paleta */
+  --color-text: #ebf7f3;
+  --color-background: #141414;
+  --color-primary: #9cf052;
+  --color-secondary: #553b4b;
+  --color-accent: #eb366b;
+
+  /* Superficies derivadas (navbar, cards): secondary muy oscurecido sobre el fondo */
+  --color-surface: #241e22;
+  --color-surface-muted: #382c33;
+
+  /* Fuente */
+  --font-display: "Titillium Web", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text font-display antialiased;
+  }
+}
+
+@utility btn {
+  @apply inline-block text-center px-6 py-2 text-sm font-semibold transition-opacity hover:opacity-90;
+}
+
+@layer components {
+  /* Header = barra de navegación */
+  header {
+    @apply sticky top-0 z-50 flex items-center justify-between bg-surface px-6 py-4;
+  }
+
+  /* Logo / enlace "fbizar" */
+  header > a {
+    @apply text-2xl font-bold text-primary transition-colors hover:text-accent;
+  }
+
+  /* Nav: lista de secciones + enlace externo */
+  header nav {
+    @apply flex items-center gap-8 text-sm text-text;
+  }
+  header nav ul {
+    @apply flex items-center gap-6;
+  }
+  header nav a {
+    @apply transition-colors hover:text-primary;
+  }
+
+  /* "Juegos" (enlace externo, último hijo directo del nav) */
+  header nav > a {
+    @apply bg-primary px-4 py-1.5 font-semibold text-background transition-opacity hover:text-background hover:opacity-90;
+  }
+  /* Card */
+  .card {
+    @apply relative bg-surface p-6 text-lg text-text;
+  }
+
+  /* Botones */
+  .btn-primary {
+    @apply btn bg-primary text-background;
+  }
+  .btn-muted {
+    @apply btn bg-surface-muted text-text;
+  }
+  .btn-close {
+    @apply absolute -top-4 -right-4 grid size-8 place-items-center bg-accent hover:bg-accent/80 text-background font-bold;
+  }
+
+  .tech-item
+  {
+    @apply inline-block bg-accent text-background p-4 text-lg font-bold;
+  }
+}

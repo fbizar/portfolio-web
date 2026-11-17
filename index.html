@@ -20,40 +20,40 @@
     <link href="css/output.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="flex flex-col min-h-dvh">
     <header>
       <a href="#hero">fbizar</a>
       <nav>
         <ul>
           <li><a href="#me">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
         <a href="https://fbizar.gitlab.io/" target="_blank">Juegos</a>
       </nav>
     </header>
 
-    <main>
+    <main class="grow container mx-auto px-4 pb-8">
       <!-- Me (main) -->
-      <section id="hero">
-        <div>
-          <img src="img/profile-photo.png" alt="Avatar" width="100" />
-          <h1>Hola, soy Felipe Bedoya</h1>
+      <section id="hero" class="grid grid-cols-2 py-8">
+        <div class="flex flex-col items-center gap-4">
+          <img src="img/profile-photo.jpg" class="m-auto" alt="Avatar" width="256"  />
+          <h1 class="text-3xl font-bold text-primary">Hola, soy<br><span class="text-accent">Felipe Bedoya</span></h1>
         </div>
-        <div>
+        <div class="flex justify-center py-6">
           <!-- Floating dialog -->
-          <article>
-            <button>X</button>
+          <article class="card flex flex-col w-100">
+            <button type="button" class="btn-close">X</button>
             <!-- Dialog body -->
-            <div>
+            <div class="flex flex-1 flex-col px-6 pt-3">
               <p>
                 Desarrollador de videojuegos Unity y coder de Riwi. <br />
                 Me apasionar buscar soluciones creativas a problemas a través de
                 buenas prácticas.
               </p>
-              <div>
-                <a href="#projects">Mis Proyectos</a>
-                <a href="#contact">Contáctame</a>
+              <div class="grid grid-cols-2 text-center mt-auto gap-4">
+                <a class="btn-primary" href="#projects">Mis Proyectos</a>
+                <a class="btn-muted" href="#contact">Contáctame</a>
               </div>
             </div>
           </article>
@@ -61,8 +61,8 @@
       </section>
 
       <!-- Description -->
-      <section id="me">
-        <h2>Sobre mí</h2>
+      <section id="me" class="py-3 mt-4 gap-2 space-y-4">
+        <h2 class="text-2xl font-bold">Sobre mí</h2>
         <p>
           Soy estudiante de desarrollo de software con enfoque web como Full
           stack Developer. Me caracterizo por mi capacidad de resolución de
@@ -73,67 +73,68 @@
       </section>
 
       <!-- Technologies -->
-      <section id="technologies">
-        <h2>Tecnologías</h2>
-        <ul>
-          <li>Unity</li>
-          <li>C#</li>
-          <li>Kotlin</li>
-          <li>Python</li>
-          <li>Java</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Bootstrap</li>
-          <li>Tailwind</li>
-          <li>Git</li>
-          <li>Svelte</li>
+      <section id="technologies" class="py-3 mt-4 space-y-4">
+        <h2 class="text-2xl font-bold">Tecnologías</h2>
+        <ul class="grid grid-cols-5 gap-4">
+          <li class="tech-item" >Unity</li>
+          <li class="tech-item">C#</li>
+          <li class="tech-item">Kotlin</li>
+          <li class="tech-item">Python</li>
+          <li class="tech-item">Java</li>
+          <li class="tech-item">HTML</li>
+          <li class="tech-item">CSS</li>
+          <li class="tech-item">JavaScript</li>
+          <li class="tech-item">Bootstrap</li>
+          <li class="tech-item">Tailwind</li>
+          <li class="tech-item">Git</li>
+          <li class="tech-item">Svelte</li>
         </ul>
       </section>
 
       <!-- Projects -->
-      <section id="projects">
-        <h2>Proyectos</h2>
-        <div>
+      <section id="projects" class="py-3 mt-4 space-y-4">
+        <h2 class="text-2xl font-bold">Proyectos</h2>
+        <div class="grid grid-cols-3 gap-4">
           <!-- Card -->
-          <article>
-            <img src="" alt="Rueda libre" />
+          <article class="card flex flex-col gap-2">
+            <img class="w-full h-48 object-cover" src="" alt="Rueda libre" />
             <!-- Card body -->
-            <div>
+            <div class="flex flex-1 flex-col gap-2">
               <div>
-                <span>HTML</span>
-                <span>Bootstrap</span>
+                <span class="inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1">HTML</span>
+                <span class="inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1">Bootstrap</span>
               </div>
-              <h3>Rueda Libre</h3>
+              <h3 class="text-xl font-bold">Rueda Libre</h3>
               <p>
                 Sitio web de un emprendimiento de Medellín dedicado a hacer que
                 moverse por la ciudad sea más fácil, divertido y sostenible.
               </p>
-              <div>
-                <a
+              <div class="grid grid-cols-2 gap-4 mt-auto">
+                <a class="btn-primary"
                   href="https://github.com/fbizar/rueda-libre/tree/bootstrap"
                   target="_blank"
                   >Ver código</a
                 >
-                <a href="https://fbizar.github.io/rueda-libre/" target="_blank"
+                <a class="btn-muted" href="https://fbizar.github.io/rueda-libre/" target="_blank"
                   >Visitar</a
                 >
               </div>
             </div>
           </article>
           <!-- Card -->
-          <article>
-            <img src="" alt="Algoritmia T1" />
+          <article class="card flex flex-col gap-2">
+            <img class="w-full h-48 object-cover" src="" alt="Algoritmia T1" />
             <!-- Card body -->
-            <div>
+            <div class="flex flex-1 flex-col gap-2">
               <div>
-                <span>PSeInt</span>
-                <span>Pseudocódigo</span>
+                <span class="inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1">PSeInt</span>
+                <span class="inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1">Pseudocódigo</span>
               </div>
-              <h3>Algoritmia T1</h3>
+              <h3 class="text-xl font-bold">Algoritmia T1</h3>
               <p>Conjunto de algoritmos hechos en PSeInt - Riwi Trayecto 1.</p>
-              <div>
+              <div  class="mt-auto grid grid-cols-1 gap-4">
                 <a
+                 class="btn-primary"
                   href="https://github.com/fbizar/algoritmia-s1"
                   target="_blank"
                   >Ver código</a
@@ -143,21 +144,21 @@
           </article>
 
           <!-- Card -->
-          <article>
-            <img src="" alt="IA Generativa T1" />
+          <article class="card flex flex-col gap-2">
+            <img class="w-full h-48 object-cover" src="" alt="IA Generativa T1" />
             <!-- Card body -->
-            <div>
+            <div class="flex flex-1 flex-col gap-2">
               <div>
-                <span>Prompt Engineering</span>
-                <span>Algoritmos</span>
+                <span class="inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1">Prompt Engineering</span>
+                <span class="inline-block bg-surface-muted text-xs text-text font-semibold px-3 py-1">Algoritmos</span>
               </div>
-              <h3>IA Generativa T1</h3>
+              <h3 class="text-xl font-bold">IA Generativa T1</h3>
               <p>
                 Ejercicios de IA trabajados en las sesiones de IA - Riwi
                 Trayecto 1.
               </p>
-              <div>
-                <a
+              <div class="grid grid-cols-1 gap-4 mt-auto">
+                <a class="btn-primary"
                   href="https://github.com/fbizar/ia-generativa-t1"
                   target="_blank"
                   >Ver código</a
@@ -169,20 +170,17 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <h2>Contacto</h2>
-        <div>
-          <p>
-            <a href="https://linkedin.com/in/felipe-bedoya-piz" target="_blank"
-              >LinkedIn</a
-            >
-            <a href="https://github.com/fbizar" target="_blank">Github</a> ·
-            <a href="https://gitlab.com/fbizar" target="_blank">Gitlab</a> ·
-          </p>
+      <section id="contact" class="py-3 mt-4 space-y-4">
+        <h2 class="text-2xl font-bold">Contacto</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <a class="bg-secondary hover:bg-secondary/80 font-bold py-4 px-6 flex flex-col" href="https://linkedin.com/in/felipe-bedoya-piz" target="_blank"
+              >LinkedIn<span class="font-light text-sm">/felipe-bedoya-piz</span></a>
+            <a class="bg-secondary hover:bg-secondary/80 font-bold py-4 px-6 flex flex-col" href="https://github.com/fbizar" target="_blank">Github<span class="font-light text-sm">fbizar</span></a> 
+            <a class="bg-secondary hover:bg-secondary/80 font-bold py-4 px-6 flex flex-col" href="https://gitlab.com/fbizar" target="_blank">Gitlab<span class="font-light text-sm">fbizar</span></a>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="bg-surface py-2 px-6 text-center">
       <p>fbizar&copy; 2026 - Hecho con Tailwind v4</p>
     </footer>
   </body>
